@@ -1,0 +1,28 @@
+// 自动生成的技术图标定义文件
+// @ts-ignore
+import type { IconDefinition } from '../types'
+
+const Vue: IconDefinition = {
+  "tag": "svg",
+  "attrs": {
+    "viewBox": "0 0 1024 1024"
+  },
+  "children": [
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M76.416 164.309333L512 916.096 947.584 167.936v-3.626667H778.24L514.56 617.258667 251.989333 164.352z",
+        "fill": "#41B883"
+      }
+    },
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M252.032 164.309333l262.485333 452.992L778.24 164.309333h-158.848L515.584 342.613333 412.16 164.266667z",
+        "fill": "#35495E"
+      }
+    }
+  ]
+}
+
+export default Vue

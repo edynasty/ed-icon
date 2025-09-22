@@ -1,0 +1,49 @@
+{
+    "name": "ed-icon",
+    "version": "1.0.0",
+    "description": "一个现代化的 SVG 图标库，为 Web 应用程序提供丰富的图标资源",
+    "private": true,
+    "keywords": [
+        "icons",
+        "svg",
+        "ui",
+        "vue",
+        "react",
+        "components"
+    ],
+    "homepage": "https://github.com/edynasty/ed-icon#readme",
+    "bugs": {
+        "url": "https://github.com/edynasty/ed-icon/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/edynasty/ed-icon.git"
+    },
+    "license": "Apache-2.0",
+    "author": {
+        "name": "edynasty",
+        "email": "1943902972@qq.com"
+    },
+    "scripts": {
+        "build": "npm run build:svg && npm run build:vue && npm run build:react",
+        "bootstrap": "npm install && npm run build:svg",
+        "build:svg": "cd packages/icons-svg && npm run build",
+        "build:vue": "cd packages/icons-vue && npm run build",
+        "build:react": "cd packages/icons-react && npm run build",
+        "clean": "npm run clean:svg && npm run clean:vue && npm run clean:react",
+        "clean:svg": "cd packages/icons-svg && npm run clean",
+        "clean:vue": "cd packages/icons-vue && npm run clean",
+        "clean:react": "cd packages/icons-react && npm run clean",
+        "generate": "cd packages/icons-svg && npm run generate",
+        "lint": "eslint packages --ext .ts,.js",
+        "lint:fix": "eslint packages --ext .ts,.js --fix"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@types/node": "^18.14.0",
+        "eslint": "^8.34.0",
+        "typescript": "^4.9.5"
+    }
+}

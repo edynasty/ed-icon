@@ -1,0 +1,23 @@
+<template>
+  <svg
+    :width="size"
+    :height="size"
+    :style="{ color: color }"
+    viewBox="0 0 1024 1024"
+    fill="currentColor"
+    v-bind="$attrs"
+  ><path d="M213.333333 85.333333h597.333334a42.666667 42.666667 0 0 1 42.666666 42.666667v816.768a21.333333 21.333333 0 0 1-32.682666 18.090667L512 769.28l-308.650667 193.536A21.333333 21.333333 0 0 1 170.666667 944.768V128a42.666667 42.666667 0 0 1 42.666666-42.666667z m554.666667 85.333334H256v658.432l256-160.469334 256 160.469334V170.666667z" />
+  </svg>
+</template>
+
+<script setup lang="ts">
+interface Props {
+  size?: string | number
+  color?: string
+}
+
+withDefaults(defineProps<Props>(), {
+  size: '1em',
+  color: 'currentColor'
+})
+</script>

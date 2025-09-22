@@ -1,0 +1,20 @@
+// 自动生成的图标定义文件
+// @ts-ignore
+import type { IconDefinition } from '../types'
+
+const Download: IconDefinition = {
+  "tag": "svg",
+  "attrs": {
+    "viewBox": "0 0 1024 1024"
+  },
+  "children": [
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M160 832h704q14.016 0 23.008 8.992T896 864t-8.992 23.008T864 896H160q-14.016 0-23.008-8.992T128 864t8.992-23.008T160 832z m384-253.984l236-236 46.016 44.992L509.024 704l-316.992-316.992 44.992-44.992 243.008 243.008V128.032h64v450.016z"
+      }
+    }
+  ]
+}
+
+export default Download

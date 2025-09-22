@@ -1,0 +1,51 @@
+{
+    "name": "@ed-ui/icons-svg",
+    "version": "1.0.0",
+    "description": "ED Icons SVG 核心包 - 包含所有 SVG 图标的原始数据",
+    "keywords": [
+        "icons",
+        "svg",
+        "ui"
+    ],
+    "homepage": "https://github.com/edynasty/ed-icon#readme",
+    "bugs": {
+        "url": "https://github.com/edynasty/ed-icon/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/edynasty/ed-icon.git",
+        "directory": "packages/icons-svg"
+    },
+    "license": "Apache-2.0",
+    "author": {
+        "name": "edynasty",
+        "email": "1943902972@qq.com"
+    },
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib",
+        "es",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "npm run clean && npm run build:lib && npm run build:es",
+        "build:lib": "npx tsc -p tsconfig.build.json --outDir lib --module commonjs",
+        "build:es": "npx tsc -p tsconfig.build.json --outDir es --module esnext",
+        "clean": "rm -rf lib es",
+        "generate": "node scripts/generate.js"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "@types/ejs": "^3.1.2",
+        "ejs": "^3.1.9",
+        "rimraf": "^4.0.0",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.9.0"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
+}

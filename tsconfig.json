@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ed-ui/icons-svg": ["packages/icons-svg/src"],
+      "@ed-ui/icons-vue": ["packages/icons-vue/src"],
+      "@ed-ui/icons-react": ["packages/icons-react/src"]
+    }
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules", "**/lib", "**/es", "**/dist"]
+}

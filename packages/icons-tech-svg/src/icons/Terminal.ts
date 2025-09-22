@@ -1,0 +1,22 @@
+// 自动生成的技术图标定义文件
+// @ts-ignore
+import type { IconDefinition } from '../types'
+
+const Terminal: IconDefinition = {
+  "tag": "svg",
+  "attrs": {
+    "viewBox": "0 0 24 24"
+  },
+  "children": [
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M6.75 7.5L9.75 9.75L6.75 12M11.25 12H14.25M5.25 20.25H18.75C19.9926 20.25 21 19.2426 21 18V6C21 4.75736 19.9926 3.75 18.75 3.75H5.25C4.00736 3.75 3 4.75736 3 6V18C3 19.2426 4.00736 20.25 5.25 20.25Z",
+        "stroke": "#0F172A",
+        "stroke-width": "1.5"
+      }
+    }
+  ]
+}
+
+export default Terminal

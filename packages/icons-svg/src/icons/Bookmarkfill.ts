@@ -1,0 +1,20 @@
+// 自动生成的图标定义文件
+// @ts-ignore
+import type { IconDefinition } from '../types'
+
+const Bookmarkfill: IconDefinition = {
+  "tag": "svg",
+  "attrs": {
+    "viewBox": "0 0 1024 1024"
+  },
+  "children": [
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M213.333333 85.333333h597.333334a42.666667 42.666667 0 0 1 42.666666 42.666667v816.768a21.333333 21.333333 0 0 1-32.682666 18.090667L512 769.28l-308.650667 193.536A21.333333 21.333333 0 0 1 170.666667 944.768V128a42.666667 42.666667 0 0 1 42.666666-42.666667z"
+      }
+    }
+  ]
+}
+
+export default Bookmarkfill

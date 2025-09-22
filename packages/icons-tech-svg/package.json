@@ -1,0 +1,42 @@
+{
+    "name": "@ed-ui/icons-tech-svg",
+    "version": "1.0.0",
+    "description": "Technology SVG icon definitions for ed-ui (AI, Language, DevOps icons)",
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib",
+        "es",
+        "src"
+    ],
+    "scripts": {
+        "build": "npm run clean && npm run generate && npm run build:cjs && npm run build:esm",
+        "build:cjs": "tsc -p tsconfig.build.json",
+        "build:esm": "tsc -p tsconfig.build.json --module es2015 --outDir es",
+        "clean": "rm -rf lib es src/icons/*.ts src/index.ts",
+        "generate": "node scripts/generate.js",
+        "dev": "npm run generate && npm run build"
+    },
+    "keywords": [
+        "icons",
+        "svg",
+        "technology",
+        "ai",
+        "language",
+        "devops",
+        "programming",
+        "development",
+        "ed-ui",
+        "typescript"
+    ],
+    "author": "ed-ui",
+    "license": "MIT",
+    "devDependencies": {
+        "ejs": "^3.1.9",
+        "typescript": "^5.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
